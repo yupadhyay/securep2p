@@ -1,0 +1,94 @@
+Introduction to Security
+Spring 2008
+FINAL README FILE
+
+Due Date: Wednesday, MAY 07 11:59 PM EST 2008 
+Author: Yogesh M Upadhyay
+e-mail(s): yupadhy1@binghamton.edu
+
+PURPOSE:
+
+To implement Confidentiality and Authentication in secure file sharing.
+
+PERCENT COMPLETE:
+
+100 %
+
+
+TO COMPILE:
+
+Steps to run the program,
+1) UnZip file. (tar -xvf Project.tar)
+-----------for Indexing Server -----------
+1) cd IndexingServer
+2) make
+------------For each peer -------------
+1) Open new terminal
+2) cd Peer<IndexNumber> (e.g. Peer1, Peer2) (Note - Open seperate terminal for seperate Peers)
+3) make
+
+
+TO RUN:
+-----------for Indexing Server -----------
+1) java Server <Port Number>
+
+------------For each peer -------------
+1) java Peer<IndexNumber> <Port Number> (e.g. java Peer1 3500)
+
+
+COMMANDS:
+
+-------------- To get a file -------------
+On peers terminal type 
+1) get <FileName>
+
+------------ To Refresh ------------------
+1) refresh
+
+--------------To exit ----------------
+1) exit
+
+--------------To do nothing ----------
+1) type anything 
+
+
+SAMPLE OUTPUT:
+
+----------------- ON INDEXING SERVER ---------------
+bingsun2% java Server 3500
+server listing on port  3500
+Waiting for connection
+Accepted connection from  /127.0.0.1  48522
+File recieved test1.txt
+File recieved test2.txt
+File recieved test3.txt
+Accepted connection from  /127.0.0.1  48526
+File recieved test4.txt
+File recieved test6
+File recieved test1.txt
+
+------------------ ON PEER1 ------------------------
+bingsun2% java Peer1 3500
+Files Registered to the server
+Connected to server
+Peer 1~~~ > 
+
+---------------- ON PEER2 ------------------------
+bingsun2% java Peer2 3500
+Files Registered to the server
+Connected to server
+Peer 2~~~ > <GIVE YOUR COMMAND HERE>
+
+TO CLEAN:
+1) make clean
+
+
+
+BIBLIOGRAPHY:
+
+1) sun.com
+
+
+
+
+
